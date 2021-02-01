@@ -1,6 +1,12 @@
 
+package Taller1;
+
 /**
- * La clase Contador tiene la intenci√≥n de representar un contador.
+ *
+ * @author User
+ */
+/**
+ * La clase Contador tiene la intenciÛn de representar un contador.
  * 
  * @author Mauricio Toro, Andres Paez
  * @version 1
@@ -15,35 +21,36 @@ public class Contador {
 	/**
      * Se inicializan las variables globales en el constructor de manera que no posean valores nulos o 0s.
      */
-    public Contador() {
-
+    public Contador(int cuenta, String id) {
+        this.id = id;
+        this.cuenta = cuenta;
     }
 
     /**
-     * El m√©todo incrementar incrementa el contador en una unidad.
+     * El mÈtodo incrementar incrementa el contador en una unidad.
      *
      *(opcional: se podria pasar un parametro "cantidad" para incrementar esa cantidad de unidades).
      */
-    public void incrementar() {
-
+    public void incrementar(int cantidad) {
+        this.cuenta = cuenta + cantidad;
     }
 
     /*
-    Se podr√≠a implementar un metodo decrementar para hacer la operacion inversa de incrementar.
+    Se podrÌa implementar un metodo decrementar para hacer la operacion inversa de incrementar.
     */
 
     /**
-     * El m√©todo incrementos nos muestra en que valor se encuentra la cuenta actualmente.
+     * El mÈtodo incrementos nos muestra en que valor se encuentra la cuenta actualmente.
      * @return el numero actual de la cuenta
      */
     public int incrementos() {
-
+        return this.cuenta;
     }
 
     
      /**
-    * toString se encargar√° de convertir el contador en un tipo cadena
-    * para su posterior visualizaci√≥n
+    * toString se encargar· de convertir el contador en un tipo cadena
+    * para su posterior visualizaciÛn
     * se debe de mostrar el estado del contador y su id
     *
     * @return una cadena que contiene el id del contador y su cuenta
